@@ -3,7 +3,7 @@ import axios from './axios';
 import "./style/Row.css";
 
 
-function Row({ title, fetchUrl }) {
+function Row({ title, fetchUrl, isLargeRow }) {
     const img_url = "https://image.tmdb.org/t/p/original/";
 
     const [movies, setMovies] = useState([]);
@@ -21,7 +21,7 @@ function Row({ title, fetchUrl }) {
         fetchData();
     }, [fetchUrl]);
 
-    console.table(movies);
+    console.log(movies);
 
 
     return (
@@ -33,8 +33,8 @@ function Row({ title, fetchUrl }) {
                 {movies.map(movie => (
                     <img
                         key={movie.id}
-                        className='row-poster'
-                        src={`${img_url}${movie.poster_path}`}
+                        className={`row-poster ${isLargeRow && "row-posterLarge"}`}
+                        src={`${img_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
                         alt={movie.name}
                     />
                 ))}
