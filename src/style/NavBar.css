@@ -6,11 +6,17 @@
     height: 30px;
     display: flex;
     justify-content: space-between;
+
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+.nav-black{
+    background-color: rgb(10, 10, 10, 0.8);
 }
 .nav-logo{
     position: fixed;
     left: 20px;
-    width: 80px;
+    width: 90px;
     object-fit: contain;
 }
 
