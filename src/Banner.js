@@ -37,7 +37,7 @@ function Banner() {
                 {/* title */}
                 {/* optional chaining */}
                 <h1 className='banner-title'>{movie?.title || movie?.name || movie?.original_name}</h1>
-                <div classNmae="banner-buttons">
+                <div className="banner-buttons">
                     <button className='banner-button'>
                         Play
                     </button>
@@ -51,6 +51,7 @@ function Banner() {
                 {/* div > 2 buttons */}
                 {/* description */}
             </div>
+            <div className='banner-fadeBottom'></div>
         </header>
     )
 }
