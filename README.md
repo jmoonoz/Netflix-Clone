@@ -1,5 +1,5 @@
 <h1>Netlifx Clone <h1>
-  <p>CLick here to view it live: <a href="https://netflix-clone-8caf8.web.app/">Moonoz Netflix</a></p>
+  <h4>Click here to view it live: <a href="https://netflix-clone-8caf8.web.app/">Moonoz Netflix</a></h4>
   <h5>Created using: </h5>
   <ul>
     <li>ReactJS</li>
