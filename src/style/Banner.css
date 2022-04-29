@@ -51,3 +51,11 @@
         rgb(10, 10, 10)
     )
 }
+
+@media only screen and ( max-width:600px ) {
+    .banner-title{
+        font-size: 2rem;
+        text-shadow:rgb(10, 10, 10);
+    }
+    
+}
